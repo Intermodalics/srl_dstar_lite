@@ -83,6 +83,10 @@ add_dependencies(srl_dstar_lite srl_dstar_lite_gencfg ${catkin_EXPORTED_TARGETS}
 
 add_dependencies(srl_dstar_lite nav_msgs_gencpp)
 
+# Deescalate compiler warnings. There are plenty.
+if(COMMAND target_compile_options)
+  target_compile_options(srl_dstar_lite PRIVATE "-Wno-error")
+endif()
 
 install(TARGETS srl_dstar_lite
        ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
