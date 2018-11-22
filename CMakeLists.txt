@@ -4,6 +4,7 @@ project(srl_dstar_lite)
 ADD_DEFINITIONS(-std=c++0x) # C++ 11 is required
 
 find_package(catkin REQUIRED COMPONENTS
+  base_local_planner
   geometry_msgs
   nav_core
   nav_msgs
@@ -33,6 +34,7 @@ FIND_PACKAGE(Boost REQUIRED)
 catkin_package(
 
   CATKIN_DEPENDS
+    base_local_planner
     geometry_msgs
     nav_core
     nav_msgs
