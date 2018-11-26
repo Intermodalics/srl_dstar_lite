@@ -17,6 +17,7 @@
 
 
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>base_local_planner</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>nav_msgs</build_depend>
   <build_depend>roscpp</build_depend>
@@ -35,6 +36,7 @@
   <!-- <run_depend>spencer_tracking_msgs</run_depend> -->
   <!-- <run_depend>spencer_nav_msgs</run_depend> -->
   <!-- <run_depend>spencer_control_msgs</run_depend> -->
+  <run_depend>base_local_planner</run_depend>
   <run_depend>nav_core</run_depend>
   <run_depend>costmap_2d</run_depend>
   <run_depend>pluginlib</run_depend>
